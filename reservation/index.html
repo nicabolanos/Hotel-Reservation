@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Cove</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+    <nav class="text-white p-6 flex justify-between items-center">
+        <h4 class="text-xl font-bold">Celestial Cove</h4>
+        <div>
+            <a href="index.html" class="px-4 hover:underline">Home</a>
+            <a href="about.html" class="px-4 hover:underline">About</a>
+            <a href="signup.php" class="px-4 hover:underline">Sign Up</a>
+            <a href="login.php" class="px-4 hover:underline bg-white text-black px-3 py-1 rounded-md">Login</a>
+        </div>
+    </nav>
+
+    <div class="container max-w-4xl px-8 py-12 ml-16">
+        <div class="text-white text-left p-6">
+            <h1 class="text-3xl font-bold">Enjoy a</h1>
+            <h1 class="text-3xl font-bold text-gray-300">Relaxing Getaway</h1>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700">Reserve Now!</button>
+        </div>
+    </div>
+
+    <div class="mt-12 bg-white px-10 py-10 rounded-lg shadow-lg max-w-4xl mx-auto">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Search available Rooms</h2>
+        <form class="space-y-4">
+            <div class="grid grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-gray-700 font-medium">Check-in Date</label>
+                    <input type="date" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">Check-in Time</label>
+                    <input type="time" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">Check-out Date</label>
+                    <input type="date" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">Check-out Time</label>
+                    <input type="time" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-gray-700 font-medium">Room Type</label>
+                    <select class="w-full border border-gray-300 p-2 rounded-lg">
+                        <option>Standard Room</option>
+                        <option>Double Room</option>
+                        <option>Deluxe Room</option>
+                        <option>Junior Suite</option>
+                        <option>Presidential Suite</option>
+                        <option>Family Room</option>        
+                        <option>Executive Room</option>
+                        <option>Villa</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">No. of Adults</label>
+                    <input type="number" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">No. of Children</label>
+                    <input type="number" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Search Now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+   
+    <div class="absolute mt-8 flex px-10 py-100 space-x-4">
+    <button class="absolute bg-gray-200 px-4 py-2 rounded">❮</button>
+    <button class="absolute bg-gray-200 px-4 py-2 rounded">❯</button>
+    </div>
+   
+    <div class="mt-12 flex justify-center gap-6">
+        <div class="relative bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <div class="absolute top-2 left-2 bg-green-500 text-white text-sm px-3 py-1 rounded">SEASON DISCOUNT! 20%</div>
+            <img src= "standard.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Standard Room</h3>
+                <p class="text-blue-600 font-semibold">P 50,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="deluxe.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Double Room</h3>
+                <p class="text-blue-600 font-semibold">P 60,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div> 
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="double.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Deluxe Room</h3>
+                <p class="text-blue-600 font-semibold">P 70,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div> 
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="junior.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Junior Room</h3>
+                <p class="text-blue-600 font-semibold">P 80,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div>
+        </div>   
+        
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="presidential.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Presidential Room</h3>
+                <p class="text-blue-600 font-semibold">P 90,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div>
+        </div> 
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="family.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Family Room</h3>
+                <p class="text-blue-600 font-semibold">P 100,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div>
+        </div> 
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="executive.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Executive Room</h3>
+                <p class="text-blue-600 font-semibold">P 120,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div>
+        </div> 
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs">
+            <img src="villa.jpg" alt="Suite Room" class="w-full">
+            <div class="p-4">
+                <h3 class="font-bold">Villa</h3>
+                <p class="text-blue-600 font-semibold">P 150,000</p>
+                <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">Reserve now</button>
+            </div>
+        </div> 
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Cove</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600');">
+    <nav class="text-white p-4 flex justify-between items-center bg-opacity-90">
+        <h4 class="text-xl font-bold">Celestial Cove</h4>
+        <div>
+            <a href="index.html" class="px-4 hover:underline">Home</a>
+            <a href="about.html" class="px-4 hover:underline">About</a>
+            <a href="login.html" class="px-4 hover:underline">Login</a>
+            <a href="signup.html" class="px-4 hover:underline">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="container max-w-3xl px-6 py-6 ml-50">
+        <div class="text-white text-left p-6 rounded-lg shadow-lg bg-opacity-90">
+            <h1 class="text-lg font-bold text-white">Enjoy a</h1>
+            <h1 class="text-lg font-bold text-white">Relaxing Getaway</h1>
+        </div>
+    </div>
+
+    <div class="mt-6 bg-white px-10 py-10 rounded-lg shadow-lg bg-opacity-90 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 left-50">Search available Rooms</h2>
+            <form class="space-y-2 bg-opacity-90 max-w-lg mx-auto">
+                <div class="grid grid-cols-4 gap-1">
+                 <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">Check-in Date</label>
+                    <input type="date" class="w-full border border-gray-300 p-2 rounded-lg" placeholder="Enter your name">
+                 </div>
+                <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">Check-in Time</label>
+                    <input type="time" class="w-full border border-gray-300 p-2 rounded-lg" placeholder="Enter your email">
+                </div>
+                <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">Check-out Date</label>
+                    <input type="date" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">Check-out Time</label>
+                    <input type="time" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">Room Type</label>
+                    <select class="w-full border border-gray-300 p-2 rounded-lg">
+                        <option>Standard Room</option>
+                        <option>Deluxe Room</option>
+                        <option>Junior Suite</option>
+                        <option>Presidential Suite</option>
+                        <option>Family Room</option>
+                        <option>Executive Room</option>
+                        <option>Villa</option>
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">No. of Adult</label>
+                    <input type="number" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="col-span-1">
+                    <label class="block text-gray-700 font-medium">No. of Children</label>
+                    <input type="number" class="w-full border border-gray-300 p-2 rounded-lg">
+                </div>
+                <div class="col-span-1">
+                    <button class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">Search</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html> -->
